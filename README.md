@@ -30,3 +30,18 @@ function isAlphanumeric(str) {
         console.log("false")
     }
 }
+
+
+challenge n2 for intermédiaire 
+
+//challeng number 10:
+
+function findLongestWord (tabl) {
+    let temp = tabl.split(" ");
+    console.log(temp)
+    let res = temp[0]
+    temp.forEach(ele => res.length > ele.length ? null : res = ele )
+    console.log(res);
+}
+
+
