@@ -44,4 +44,55 @@ function findLongestWord (tabl) {
     console.log(res);
 }
 
+//challeng number 09:
 
+function isPerfectNumber (num) {
+    let fact = 0 ;
+    for(let i = 1 ; i < num ; i++){
+        if(num % i == 0) {
+            fact += i 
+        }
+    }
+    let res = fact == num 
+    console.log(res)
+}
+
+//challeng number 02: 
+
+function isPrime  (params) {
+    let res = true ; 
+    if(params <= 1){
+        res = false ;
+    }else {
+        for(let i = 2 ; i < params ; i++){
+            if(params % i == 0 ) {
+                res = false ; 
+            }
+        }
+    }
+    console.log(res) ; 
+}
+
+challenge n3 for avancé  
+
+//challenge 01 array 
+
+const numbers = [1, 2, 3, 4, 5];
+const sum = numbers.reduce((res , ele) => res += ele ,0)
+console.log(sum); 
+
+
+
+//challenge 02 array 
+
+const duplicates = [1, 2, 2, 3, 4, 4, 5];
+const unique = []
+duplicates.forEach(ele => unique.includes(ele) ? null : unique.push(ele))
+console.log(unique);
+
+
+//challenge 03 array 
+
+const numbers = [1, 3, 2, 5, 4];
+const max =  numbers.reduce((res , ele) => res > ele ? res : res = ele ,0)
+console.log(max); 
