@@ -96,3 +96,20 @@ console.log(unique);
 const numbers = [1, 3, 2, 5, 4];
 const max =  numbers.reduce((res , ele) => res > ele ? res : res = ele ,0)
 console.log(max); 
+
+
+//challenge  19 avancé : 
+
+function breadthFirstSearch( params , inde) {
+    let rep = [] ;  
+    rep.push(inde) ;
+     for(let i = 0 ; i < rep.length ; i++ ) {
+        params[rep[i]].forEach(ele => {
+            if(!rep.includes(ele)){
+                rep.push(ele)
+            }
+        }) 
+    } 
+    console.log(rep)
+}
+
